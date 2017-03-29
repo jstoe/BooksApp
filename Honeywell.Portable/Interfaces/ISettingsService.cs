@@ -8,7 +8,7 @@ namespace Honeywell.Portable.Interfaces
 {
     public interface ISettingsService
     {
-        object Get(string key);
+        T Get<T>(string key) where T : class;
         bool Set(string key, object value);
     }
 }
