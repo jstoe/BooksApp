@@ -27,7 +27,6 @@ namespace BooksApp.Core
             string user = settings.Get<string>("UserName")?.ToString();
             if(string.IsNullOrWhiteSpace(user))
             {
-                settings.Set("UserName", "HansDampf");
                 RegisterAppStart<LoginViewModel>();
                 return;
             }

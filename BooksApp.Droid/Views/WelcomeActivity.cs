@@ -4,13 +4,13 @@ using MvvmCross.Droid.Views;
 
 namespace BooksApp.Droid.Views
 {
-    [Activity(Label = "View for SecondViewModel")]
-    public class SecondActivity : MvxActivity
+    [Activity(Label = "View for WelcomeViewModel")]
+    public class WelcomeActivity : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.SecondActivity);
+            SetContentView(Resource.Layout.WelcomeActivity);
         }
     }
 }
