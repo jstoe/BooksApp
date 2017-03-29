@@ -1,4 +1,9 @@
+using System;
+using Honeywell.Portable.Interfaces;
+using Honeywell.Portable.Services;
+using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
+using BooksApp.Core.ViewModels;
 
 namespace BooksApp.Core
 {
@@ -11,7 +16,23 @@ namespace BooksApp.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            Mvx.ConstructAndRegisterSingleton<ISettingsService, SimpleFileSettingsService>();
+
+            CheckAndSetAppStart();
+        }
+
+        private void CheckAndSetAppStart()
+        {
+            var settings = Mvx.Resolve<ISettingsService>();
+            string user = settings.Get("UserName")?.ToString();
+            if(string.IsNullOrWhiteSpace(user))
+            {
+                RegisterAppStart<LoginViewModel>();
+                return;
+            }
+
+            RegisterAppStart<WelcomeViewModel>();
+            // check for last active viewmodel
         }
     }
 }

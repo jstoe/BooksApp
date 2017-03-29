@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksApp.Core", "BooksApp.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksApp.Droid", "BooksApp.Droid\BooksApp.Droid.csproj", "{14B30E0B-20A7-49F3-83CB-913275AD85EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Honeywell.Portable", "Honeywell.Portable\Honeywell.Portable.csproj", "{EBFA1632-B5A0-4161-80E9-20F5ADDB0F5A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{14B30E0B-20A7-49F3-83CB-913275AD85EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14B30E0B-20A7-49F3-83CB-913275AD85EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{14B30E0B-20A7-49F3-83CB-913275AD85EE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EBFA1632-B5A0-4161-80E9-20F5ADDB0F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFA1632-B5A0-4161-80E9-20F5ADDB0F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFA1632-B5A0-4161-80E9-20F5ADDB0F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFA1632-B5A0-4161-80E9-20F5ADDB0F5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

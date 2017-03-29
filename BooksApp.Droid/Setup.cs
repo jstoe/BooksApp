@@ -11,6 +11,11 @@ namespace BooksApp.Droid
         {
         }
 
+        protected override void InitializeFirstChance()
+        {
+            base.InitializeFirstChance();
+        }
+
         protected override IMvxApplication CreateApp()
         {
             return new Core.App();
