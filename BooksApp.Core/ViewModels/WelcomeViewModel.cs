@@ -2,7 +2,7 @@
 
 namespace BooksApp.Core.ViewModels
 {
-    public class SecondViewModel : MvxViewModel
+    public class WelcomeViewModel : MvxViewModel
     {
         public string Message { get; private set; }
 

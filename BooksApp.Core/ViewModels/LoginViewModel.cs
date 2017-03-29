@@ -1,11 +1,10 @@
 using MvvmCross.Core.ViewModels;
 using System.ComponentModel;
 using System.Windows.Input;
-using System;
 
 namespace BooksApp.Core.ViewModels
 {
-    public class FirstViewModel : MvxViewModel
+    public class LoginViewModel : MvxViewModel
     {
         //private string _hello = "Hello MvvmCross";
         //public string Hello
@@ -14,6 +13,10 @@ namespace BooksApp.Core.ViewModels
         //    set { SetProperty (ref _hello, value); }
         //}
 
+        public LoginViewModel()
+        {
+
+        }
         public string Hello { get; set; } = "Hello MvvmCross";
 
         [PropertyChanged.DoNotNotify]
@@ -23,7 +26,26 @@ namespace BooksApp.Core.ViewModels
 
         private void ShowSecond()
         {
-            ShowViewModel<SecondViewModel>(new { message = "Coming from FirstViewModel" });
+            ShowViewModel<WelcomeViewModel>(new { message = "Coming from FirstViewModel" });
+        }
+
+        void Login()
+        {
+
+            //var auth = new OAuth2Authenticator(
+            //    clientId: "App ID from https://developers.facebook.com/apps",
+            //    scope: "",
+            //    authorizeUrl: new Uri("https://m.facebook.com/dialog/oauth/"),
+            //    redirectUrl: new Uri("http://www.facebook.com/connect/login_success.html"));
+
+            //auth.Completed += (sender, eventArgs) =>
+            //{
+            //    if (eventArgs.IsAuthenticated)
+            //    {
+            //        // Use eventArgs.Account to do wonderful things
+            //    }
+            //};
+            //auth.
         }
     }
 
