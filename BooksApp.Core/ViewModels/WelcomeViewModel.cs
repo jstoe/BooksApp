@@ -1,19 +1,16 @@
-﻿using MvvmCross.Core.ViewModels;
+﻿using BooksApp.Core.Localization;
+using Honeywell.Portable.Interfaces;
+using MvvmCross.Core.ViewModels;
 
 namespace BooksApp.Core.ViewModels
 {
     public class WelcomeViewModel : MvxViewModel
     {
-        public string Message { get; private set; }
+        public string User { get; private set; }
 
-        protected override void InitFromBundle(IMvxBundle parameters)
+        public WelcomeViewModel(ISettingsService settings)
         {
-            base.InitFromBundle(parameters);
-        }
-
-        public void Init(string message)
-        {
-            this.Message = message;
+            User = settings.Get<string>("UserName");
         }
     }
 }
