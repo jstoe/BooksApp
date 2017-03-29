@@ -24,9 +24,10 @@ namespace BooksApp.Core
         private void CheckAndSetAppStart()
         {
             var settings = Mvx.Resolve<ISettingsService>();
-            string user = settings.Get("UserName")?.ToString();
+            string user = settings.Get<string>("UserName")?.ToString();
             if(string.IsNullOrWhiteSpace(user))
             {
+                settings.Set("UserName", "HansDampf");
                 RegisterAppStart<LoginViewModel>();
                 return;
             }

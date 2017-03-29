@@ -2,6 +2,9 @@ using Android.Content;
 using MvvmCross.Droid.Platform;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.Platform;
+using MvvmCross.Platform;
+using Honeywell.Portable.Interfaces;
+using BooksApp.Droid.Services;
 
 namespace BooksApp.Droid
 {
@@ -14,6 +17,7 @@ namespace BooksApp.Droid
         protected override void InitializeFirstChance()
         {
             base.InitializeFirstChance();
+            Mvx.LazyConstructAndRegisterSingleton<IPlatformInfo, DroidPlatformInfo>();
         }
 
         protected override IMvxApplication CreateApp()
