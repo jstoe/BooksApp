@@ -1071,32 +1071,32 @@ namespace BooksApp.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0b004e
-			public const int abc_background_cache_hint_selector_material_dark = 2131427406;
+			// aapt resource value: 0x7f0b005a
+			public const int abc_background_cache_hint_selector_material_dark = 2131427418;
 			
-			// aapt resource value: 0x7f0b004f
-			public const int abc_background_cache_hint_selector_material_light = 2131427407;
+			// aapt resource value: 0x7f0b005b
+			public const int abc_background_cache_hint_selector_material_light = 2131427419;
 			
-			// aapt resource value: 0x7f0b0050
-			public const int abc_color_highlight_material = 2131427408;
+			// aapt resource value: 0x7f0b005c
+			public const int abc_color_highlight_material = 2131427420;
 			
 			// aapt resource value: 0x7f0b0000
 			public const int abc_input_method_navigation_guard = 2131427328;
 			
-			// aapt resource value: 0x7f0b0051
-			public const int abc_primary_text_disable_only_material_dark = 2131427409;
+			// aapt resource value: 0x7f0b005d
+			public const int abc_primary_text_disable_only_material_dark = 2131427421;
 			
-			// aapt resource value: 0x7f0b0052
-			public const int abc_primary_text_disable_only_material_light = 2131427410;
+			// aapt resource value: 0x7f0b005e
+			public const int abc_primary_text_disable_only_material_light = 2131427422;
 			
-			// aapt resource value: 0x7f0b0053
-			public const int abc_primary_text_material_dark = 2131427411;
+			// aapt resource value: 0x7f0b005f
+			public const int abc_primary_text_material_dark = 2131427423;
 			
-			// aapt resource value: 0x7f0b0054
-			public const int abc_primary_text_material_light = 2131427412;
+			// aapt resource value: 0x7f0b0060
+			public const int abc_primary_text_material_light = 2131427424;
 			
-			// aapt resource value: 0x7f0b0055
-			public const int abc_search_url_text = 2131427413;
+			// aapt resource value: 0x7f0b0061
+			public const int abc_search_url_text = 2131427425;
 			
 			// aapt resource value: 0x7f0b0001
 			public const int abc_search_url_text_normal = 2131427329;
@@ -1107,11 +1107,11 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f0b0003
 			public const int abc_search_url_text_selected = 2131427331;
 			
-			// aapt resource value: 0x7f0b0056
-			public const int abc_secondary_text_material_dark = 2131427414;
+			// aapt resource value: 0x7f0b0062
+			public const int abc_secondary_text_material_dark = 2131427426;
 			
-			// aapt resource value: 0x7f0b0057
-			public const int abc_secondary_text_material_light = 2131427415;
+			// aapt resource value: 0x7f0b0063
+			public const int abc_secondary_text_material_light = 2131427427;
 			
 			// aapt resource value: 0x7f0b0004
 			public const int accent_material_dark = 2131427332;
@@ -1131,8 +1131,8 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f0b0009
 			public const int background_material_light = 2131427337;
 			
-			// aapt resource value: 0x7f0b004c
-			public const int black = 2131427404;
+			// aapt resource value: 0x7f0b0058
+			public const int black = 2131427416;
 			
 			// aapt resource value: 0x7f0b000a
 			public const int bright_foreground_disabled_material_dark = 2131427338;
@@ -1167,8 +1167,8 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f0b0045
 			public const int colorPrimaryDark = 2131427397;
 			
-			// aapt resource value: 0x7f0b004b
-			public const int dark_gray = 2131427403;
+			// aapt resource value: 0x7f0b0057
+			public const int dark_gray = 2131427415;
 			
 			// aapt resource value: 0x7f0b003a
 			public const int design_fab_shadow_end_color = 2131427386;
@@ -1218,8 +1218,8 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f0b0017
 			public const int foreground_material_light = 2131427351;
 			
-			// aapt resource value: 0x7f0b004a
-			public const int gray = 2131427402;
+			// aapt resource value: 0x7f0b0056
+			public const int gray = 2131427414;
 			
 			// aapt resource value: 0x7f0b0018
 			public const int highlighted_text_material_dark = 2131427352;
@@ -1233,8 +1233,20 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f0b001b
 			public const int hint_foreground_material_light = 2131427355;
 			
-			// aapt resource value: 0x7f0b0048
-			public const int light_gray = 2131427400;
+			// aapt resource value: 0x7f0b004f
+			public const int honeywell_red = 2131427407;
+			
+			// aapt resource value: 0x7f0b0050
+			public const int honeywell_red_dark = 2131427408;
+			
+			// aapt resource value: 0x7f0b0054
+			public const int light_gray = 2131427412;
+			
+			// aapt resource value: 0x7f0b0049
+			public const int light_green = 2131427401;
+			
+			// aapt resource value: 0x7f0b004a
+			public const int light_green_dark = 2131427402;
 			
 			// aapt resource value: 0x7f0b001c
 			public const int material_blue_grey_800 = 2131427356;
@@ -1272,8 +1284,20 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f0b0027
 			public const int material_grey_900 = 2131427367;
 			
-			// aapt resource value: 0x7f0b0049
-			public const int med_gray = 2131427401;
+			// aapt resource value: 0x7f0b0055
+			public const int med_gray = 2131427413;
+			
+			// aapt resource value: 0x7f0b0047
+			public const int medium_blue = 2131427399;
+			
+			// aapt resource value: 0x7f0b0048
+			public const int medium_blue_dark = 2131427400;
+			
+			// aapt resource value: 0x7f0b004d
+			public const int orange = 2131427405;
+			
+			// aapt resource value: 0x7f0b004e
+			public const int orange_dark = 2131427406;
 			
 			// aapt resource value: 0x7f0b0028
 			public const int primary_dark_material_dark = 2131427368;
@@ -1299,6 +1323,12 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f0b002f
 			public const int primary_text_disabled_material_light = 2131427375;
 			
+			// aapt resource value: 0x7f0b0051
+			public const int purple = 2131427409;
+			
+			// aapt resource value: 0x7f0b0052
+			public const int purple_dark = 2131427410;
+			
 			// aapt resource value: 0x7f0b0030
 			public const int ripple_material_dark = 2131427376;
 			
@@ -1323,11 +1353,11 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f0b0037
 			public const int switch_thumb_disabled_material_light = 2131427383;
 			
-			// aapt resource value: 0x7f0b0058
-			public const int switch_thumb_material_dark = 2131427416;
+			// aapt resource value: 0x7f0b0064
+			public const int switch_thumb_material_dark = 2131427428;
 			
-			// aapt resource value: 0x7f0b0059
-			public const int switch_thumb_material_light = 2131427417;
+			// aapt resource value: 0x7f0b0065
+			public const int switch_thumb_material_light = 2131427429;
 			
 			// aapt resource value: 0x7f0b0038
 			public const int switch_thumb_normal_material_dark = 2131427384;
@@ -1335,11 +1365,17 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f0b0039
 			public const int switch_thumb_normal_material_light = 2131427385;
 			
-			// aapt resource value: 0x7f0b004d
-			public const int text_gray = 2131427405;
+			// aapt resource value: 0x7f0b0059
+			public const int text_gray = 2131427417;
 			
-			// aapt resource value: 0x7f0b0047
-			public const int white = 2131427399;
+			// aapt resource value: 0x7f0b0053
+			public const int white = 2131427411;
+			
+			// aapt resource value: 0x7f0b004b
+			public const int yellow = 2131427403;
+			
+			// aapt resource value: 0x7f0b004c
+			public const int yellow_dark = 2131427404;
 			
 			static Color()
 			{
@@ -2016,11 +2052,11 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f06000c
 			public const int MvxBindingTagUnique = 2131099660;
 			
-			// aapt resource value: 0x7f06007d
-			public const int TbxPassword = 2131099773;
+			// aapt resource value: 0x7f06007e
+			public const int TbxPassword = 2131099774;
 			
-			// aapt resource value: 0x7f06007c
-			public const int TbxUsername = 2131099772;
+			// aapt resource value: 0x7f06007d
+			public const int TbxUsername = 2131099773;
 			
 			// aapt resource value: 0x7f060084
 			public const int action0 = 2131099780;
@@ -2205,11 +2241,11 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f060041
 			public const int image = 2131099713;
 			
-			// aapt resource value: 0x7f06007b
-			public const int imageView = 2131099771;
+			// aapt resource value: 0x7f06007c
+			public const int imageView = 2131099772;
 			
-			// aapt resource value: 0x7f060074
-			public const int image_view_row_icon = 2131099764;
+			// aapt resource value: 0x7f060075
+			public const int image_view_row_icon = 2131099765;
 			
 			// aapt resource value: 0x7f06008f
 			public const int info = 2131099791;
@@ -2232,8 +2268,8 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f060043
 			public const int list_item = 2131099715;
 			
-			// aapt resource value: 0x7f060078
-			public const int main_content = 2131099768;
+			// aapt resource value: 0x7f06007a
+			public const int main_content = 2131099770;
 			
 			// aapt resource value: 0x7f060081
 			public const int main_frame = 2131099777;
@@ -2250,26 +2286,14 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f060018
 			public const int multiply = 2131099672;
 			
-			// aapt resource value: 0x7f060097
-			public const int nav_footer = 2131099799;
-			
-			// aapt resource value: 0x7f060099
-			public const int nav_helpfeedback = 2131099801;
-			
 			// aapt resource value: 0x7f060094
 			public const int nav_home = 2131099796;
 			
 			// aapt resource value: 0x7f060093
 			public const int nav_items = 2131099795;
 			
-			// aapt resource value: 0x7f060096
-			public const int nav_recyclerview = 2131099798;
-			
-			// aapt resource value: 0x7f060098
-			public const int nav_settings = 2131099800;
-			
 			// aapt resource value: 0x7f060095
-			public const int nav_viewpager = 2131099797;
+			public const int nav_research = 2131099797;
 			
 			// aapt resource value: 0x7f060083
 			public const int navigation_frame = 2131099779;
@@ -2277,8 +2301,8 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f06006f
 			public const int navigation_header_container = 2131099759;
 			
-			// aapt resource value: 0x7f06007a
-			public const int navigation_view = 2131099770;
+			// aapt resource value: 0x7f06007b
+			public const int navigation_view = 2131099771;
 			
 			// aapt resource value: 0x7f060023
 			public const int never = 2131099683;
@@ -2298,8 +2322,8 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f06002b
 			public const int pin = 2131099691;
 			
-			// aapt resource value: 0x7f06007e
-			public const int progressBar1 = 2131099774;
+			// aapt resource value: 0x7f060079
+			public const int progressBar1 = 2131099769;
 			
 			// aapt resource value: 0x7f060006
 			public const int progress_circular = 2131099654;
@@ -2421,17 +2445,17 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f06004f
 			public const int textSpacerNoButtons = 2131099727;
 			
-			// aapt resource value: 0x7f060079
-			public const int textView1 = 2131099769;
-			
-			// aapt resource value: 0x7f060075
-			public const int text_container = 2131099765;
+			// aapt resource value: 0x7f060074
+			public const int textView1 = 2131099764;
 			
 			// aapt resource value: 0x7f060076
-			public const int text_view_fullname = 2131099766;
+			public const int text_container = 2131099766;
 			
 			// aapt resource value: 0x7f060077
-			public const int text_view_username = 2131099767;
+			public const int text_view_fullname = 2131099767;
+			
+			// aapt resource value: 0x7f060078
+			public const int text_view_username = 2131099768;
 			
 			// aapt resource value: 0x7f06008a
 			public const int time = 2131099786;
@@ -2592,100 +2616,109 @@ namespace BooksApp.Droid
 			public const int abc_select_dialog_material = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int design_bottom_sheet_dialog = 2130903065;
+			public const int BookItem = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int design_layout_snackbar = 2130903066;
+			public const int design_bottom_sheet_dialog = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int design_layout_snackbar_include = 2130903067;
+			public const int design_layout_snackbar = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int design_layout_tab_icon = 2130903068;
+			public const int design_layout_snackbar_include = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int design_layout_tab_text = 2130903069;
+			public const int design_layout_tab_icon = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int design_menu_item_action_area = 2130903070;
+			public const int design_layout_tab_text = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int design_navigation_item = 2130903071;
+			public const int design_menu_item_action_area = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int design_navigation_item_header = 2130903072;
+			public const int design_navigation_item = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int design_navigation_item_separator = 2130903073;
+			public const int design_navigation_item_header = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int design_navigation_item_subheader = 2130903074;
+			public const int design_navigation_item_separator = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int design_navigation_menu = 2130903075;
+			public const int design_navigation_item_subheader = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int design_navigation_menu_item = 2130903076;
+			public const int design_navigation_menu = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int fragment_navigation_header = 2130903077;
+			public const int design_navigation_menu_item = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int fragment_welcome = 2130903078;
+			public const int fragment_detail = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int FragmentNavigation = 2130903079;
+			public const int fragment_navigation_header = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int LoginView = 2130903080;
+			public const int fragment_search = 2130903080;
 			
 			// aapt resource value: 0x7f030029
-			public const int MainActivity = 2130903081;
+			public const int fragment_welcome = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int notification_media_action = 2130903082;
+			public const int FragmentNavigation = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int notification_media_cancel_action = 2130903083;
+			public const int LoginView = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int notification_template_big_media = 2130903084;
+			public const int MainActivity = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int notification_template_big_media_narrow = 2130903085;
+			public const int notification_media_action = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int notification_template_lines = 2130903086;
+			public const int notification_media_cancel_action = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int notification_template_media = 2130903087;
+			public const int notification_template_big_media = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int notification_template_part_chronometer = 2130903088;
+			public const int notification_template_big_media_narrow = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int notification_template_part_time = 2130903089;
+			public const int notification_template_lines = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int select_dialog_item_material = 2130903090;
+			public const int notification_template_media = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int select_dialog_multichoice_material = 2130903091;
+			public const int notification_template_part_chronometer = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int select_dialog_singlechoice_material = 2130903092;
+			public const int notification_template_part_time = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int SplashScreen = 2130903093;
+			public const int select_dialog_item_material = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int support_simple_spinner_dropdown_item = 2130903094;
+			public const int select_dialog_multichoice_material = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int toolbar_actionbar = 2130903095;
+			public const int select_dialog_singlechoice_material = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int WelcomeActivity = 2130903096;
+			public const int SplashScreen = 2130903096;
+			
+			// aapt resource value: 0x7f030039
+			public const int support_simple_spinner_dropdown_item = 2130903097;
+			
+			// aapt resource value: 0x7f03003a
+			public const int toolbar_actionbar = 2130903098;
+			
+			// aapt resource value: 0x7f03003b
+			public const int WelcomeActivity = 2130903099;
 			
 			static Layout()
 			{

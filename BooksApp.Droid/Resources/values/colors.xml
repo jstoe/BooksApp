@@ -1,42 +1,42 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <resources>
 
-    <!-- General colors -->
-    <color name="colorPrimary">#1792E5</color>
-    <color name="colorPrimaryDark">#1272B2</color>
-    <color name="colorAccent">#EE3124</color>
+  <!-- General colors -->
+  <color name="colorPrimary">#1792E5</color>
+  <color name="colorPrimaryDark">#1272B2</color>
+  <color name="colorAccent">#EE3124</color>
 
-    <!-- Medium Blue-->
-    <color name="medium_blue">#1792E5</color>
-    <color name="medium_blue_dark">#1272B2</color>
-    
-    <!-- Light Green-->
-    <color name="light_green">#7EB338</color>
-    <color name="light_green_dark">#628B2C</color>
+  <!-- Medium Blue-->
+  <color name="medium_blue">#1792E5</color>
+  <color name="medium_blue_dark">#1272B2</color>
 
-    <!-- Yellow-->
-    <color name="yellow">#FFC627</color>
-    <color name="yellow_dark">#C69A1F</color>
+  <!-- Light Green-->
+  <color name="light_green">#7EB338</color>
+  <color name="light_green_dark">#628B2C</color>
 
-    <!-- Orange-->
-    <color name="orange">#F37021</color>
-    <color name="orange_dark">#BD571A</color>
+  <!-- Yellow-->
+  <color name="yellow">#FFC627</color>
+  <color name="yellow_dark">#C69A1F</color>
 
-    <!-- Honeywell Red-->
-    <color name="honeywell_red">#EE3124</color>
-    <color name="honeywell_red_dark">#B9261C</color>
+  <!-- Orange-->
+  <color name="orange">#F37021</color>
+  <color name="orange_dark">#BD571A</color>
 
-    <!-- Purple-->
-    <color name="purple">#9B5986</color>
-    <color name="purple_dark">#79458E</color>
+  <!-- Honeywell Red-->
+  <color name="honeywell_red">#EE3124</color>
+  <color name="honeywell_red_dark">#B9261C</color>
 
-    <!-- White to Black -->
-    <color name="white">#FFFFFF</color>
-    <color name="light_gray">#D0D0D0</color>
-    <color name="med_gray">#808080</color>
-    <color name="gray">#606060</color>
-    <color name="dark_gray">#303030</color>
-    <color name="black">#000000</color>
-    <color name="text_gray">#5A6570</color>
+  <!-- Purple-->
+  <color name="purple">#9B5986</color>
+  <color name="purple_dark">#79458E</color>
+
+  <!-- White to Black -->
+  <color name="white">#FFFFFF</color>
+  <color name="light_gray">#D0D0D0</color>
+  <color name="med_gray">#808080</color>
+  <color name="gray">#606060</color>
+  <color name="dark_gray">#303030</color>
+  <color name="black">#000000</color>
+  <color name="text_gray">#5A6570</color>
 
 </resources>
