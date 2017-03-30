@@ -17,21 +17,28 @@ namespace BooksApp.Core
                 .RegisterAsLazySingleton();
 
             Mvx.ConstructAndRegisterSingleton<ISettingsService, SimpleFileSettingsService>();
+            Mvx.RegisterType<ILoginService, LoginService>();
 
             CheckAndSetAppStart();
         }
 
         private void CheckAndSetAppStart()
         {
-            var settings = Mvx.Resolve<ISettingsService>();
-            string user = settings.Get<string>("UserName")?.ToString();
-            if(string.IsNullOrWhiteSpace(user))
-            {
+            var login = Mvx.Resolve<ILoginService>();
+            if (login.Login())
+                RegisterAppStart<MainViewModel>();
+            else
                 RegisterAppStart<LoginViewModel>();
-                return;
-            }
 
-            RegisterAppStart<WelcomeViewModel>();
+            //var settings = Mvx.Resolve<ISettingsService>();
+            //string user = settings.Get<string>("UserName")?.ToString();
+            //if(string.IsNullOrWhiteSpace(user))
+            //{
+            //    RegisterAppStart<LoginViewModel>();
+            //    return;
+            //}
+
+            // RegisterAppStart<WelcomeViewModel>();
             // check for last active viewmodel
         }
     }

@@ -62,6 +62,24 @@ namespace BooksApp.Core.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Close navigation drawer.
+        /// </summary>
+        public static string DrawerClose {
+            get {
+                return ResourceManager.GetString("DrawerClose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open navigation drawer.
+        /// </summary>
+        public static string DrawerOpen {
+            get {
+                return ResourceManager.GetString("DrawerOpen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Welcome.
         /// </summary>
         public static string Welcome {
