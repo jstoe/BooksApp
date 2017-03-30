@@ -68,6 +68,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/colorPrimary"
         android:textSize="@dimen/text_medium"
+        local:MvxBind="Text Password"
         android:imeOptions="actionGo" />
   </android.support.design.widget.TextInputLayout>
   <ProgressBar

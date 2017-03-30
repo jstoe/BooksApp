@@ -1,6 +1,7 @@
 using Honeywell.Portable.Interfaces;
 using MvvmCross.Core.ViewModels;
 using System.ComponentModel;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace BooksApp.Core.ViewModels
@@ -21,63 +22,21 @@ namespace BooksApp.Core.ViewModels
             IsLoading = false;
         }
 
-        private string _username;
-        public string Username
-        {
-            get
-            {
-                return _username;
-            }
+        public string Username { get; set; }
 
-            set
-            {
-                SetProperty(ref _username, value);
-                RaisePropertyChanged(() => Username);
-            }
-        }
+        public string Password { get; set; }
 
-        private string _password;
-        public string Password
-        {
-            get
-            {
-                return _password;
-            }
 
-            set
-            {
-                SetProperty(ref _password, value);
-                RaisePropertyChanged(() => Password);
-            }
-        }
-
-        private bool _isLoading;
-
-        public bool IsLoading
-        {
-            get
-            {
-                return _isLoading;
-            }
-
-            set
-            {
-                SetProperty(ref _isLoading, value);
-            }
-        }
+        public bool IsLoading { get; set; }
 
         private IMvxCommand _loginCommand;
-        public virtual IMvxCommand LoginCommand
-        {
-            get
-            {
-                _loginCommand = _loginCommand ?? new MvxCommand(AttemptLogin, CanExecuteLogin);
-                return _loginCommand;
-            }
-        }
+        public virtual IMvxCommand LoginCommand => _loginCommand ??
+            (_loginCommand = new MvxCommand(AttemptLogin, CanExecuteLogin));
 
-        private void AttemptLogin()
+        private async void AttemptLogin()
         {
+            IsLoading = true;
+            await Task.Delay(500);
             if (_loginService.Login(Username, Password))
             {
                 ShowViewModel<MainViewModel>();
@@ -86,6 +45,7 @@ namespace BooksApp.Core.ViewModels
             {
                 _dialogService.Alert("We were unable to log you in!", "Login Failed", "OK");
             }
+            IsLoading = false;
         }
 
         private bool CanExecuteLogin()
