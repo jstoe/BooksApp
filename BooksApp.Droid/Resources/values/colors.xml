@@ -2,17 +2,41 @@
 <resources>
 
     <!-- General colors -->
-    <color name="colorPrimary">#DE1E34</color>
-    <color name="colorPrimaryDark">#7A111D</color>
-    <color name="colorAccent">#FF233D</color>
+    <color name="colorPrimary">#1792E5</color>
+    <color name="colorPrimaryDark">#1272B2</color>
+    <color name="colorAccent">#EE3124</color>
+
+    <!-- Medium Blue-->
+    <color name="medium_blue">#1792E5</color>
+    <color name="medium_blue_dark">#1272B2</color>
+    
+    <!-- Light Green-->
+    <color name="light_green">#7EB338</color>
+    <color name="light_green_dark">#628B2C</color>
+
+    <!-- Yellow-->
+    <color name="yellow">#FFC627</color>
+    <color name="yellow_dark">#C69A1F</color>
+
+    <!-- Orange-->
+    <color name="orange">#F37021</color>
+    <color name="orange_dark">#BD571A</color>
+
+    <!-- Honeywell Red-->
+    <color name="honeywell_red">#EE3124</color>
+    <color name="honeywell_red_dark">#B9261C</color>
+
+    <!-- Purple-->
+    <color name="purple">#9B5986</color>
+    <color name="purple_dark">#79458E</color>
 
     <!-- White to Black -->
     <color name="white">#FFFFFF</color>
-    <color name="light_gray">#EFF2F5</color>
-    <color name="med_gray">#C7D2DC</color>
-    <color name="gray">#5C7082</color>
-    <color name="dark_gray">#FF2B343D</color>
-    <color name="black">#0D131A</color>
+    <color name="light_gray">#D0D0D0</color>
+    <color name="med_gray">#808080</color>
+    <color name="gray">#606060</color>
+    <color name="dark_gray">#303030</color>
+    <color name="black">#000000</color>
     <color name="text_gray">#5A6570</color>
 
 </resources>
