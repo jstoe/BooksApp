@@ -9,9 +9,12 @@ namespace Honeywell.Portable.Services
 {
     public class LoginService : ILoginService
     {
+        private ISettingsService m_SettingsService;
+
         /// <summary>Initializes a new instance of the <see cref="LoginService"/> class.</summary>
-        public LoginService() // e.g. LoginService(IMyApiClient client)
+        public LoginService(ISettingsService settingsService) // e.g. LoginService(IMyApiClient client)
         {
+            this.m_SettingsService = settingsService;
             // this constructor would most likely contain some form of API Client that performs
             // the message creation, sending and deals with the response from a remote API
         }
@@ -33,10 +36,9 @@ namespace Honeywell.Portable.Services
         {
             // get the stored username from previous sessions
             // var username = Settings.UserName;
-            // var username = _settingsService.GetValue<string>(Constants.UserNameKey);
-
+            var username = m_SettingsService.Get<string>("UserName");
             // force return of false just for demo purposes
-            IsAuthenticated = false;
+            IsAuthenticated = !string.IsNullOrWhiteSpace(username);
             return IsAuthenticated;
         }
 
@@ -50,14 +52,14 @@ namespace Honeywell.Portable.Services
             try
             {
                 //IsAuthenticated = _apiClient.ExchangeUserCredentialsForTokens(userName, password, scope);
-                return IsAuthenticated;
             }
             catch (ArgumentException argex)
             {
                 ErrorMessage = argex.Message;
                 IsAuthenticated = false;
-                return IsAuthenticated;
             }
+            SaveIfAuthenticated(userName);
+            return IsAuthenticated;
         }
 
         /// <summary>
@@ -69,7 +71,15 @@ namespace Honeywell.Portable.Services
         public bool Login(string userName, string password)
         {
             // this simply returns true to mock a real login service call
-            return true;
+            IsAuthenticated = userName.Contains(password);
+            SaveIfAuthenticated(userName);
+            return IsAuthenticated;
+        }
+
+        private void SaveIfAuthenticated(string userName)
+        {
+            if (IsAuthenticated)
+                m_SettingsService.Set("UserName", userName);
         }
     }
 
