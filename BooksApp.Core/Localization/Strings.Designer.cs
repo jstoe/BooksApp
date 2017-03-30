@@ -80,6 +80,33 @@ namespace BooksApp.Core.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to New Search.
+        /// </summary>
+        public static string NewSearch {
+            get {
+                return ResourceManager.GetString("NewSearch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Research.
+        /// </summary>
+        public static string ResearchTitle {
+            get {
+                return ResourceManager.GetString("ResearchTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        public static string Search {
+            get {
+                return ResourceManager.GetString("Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Welcome.
         /// </summary>
         public static string Welcome {
