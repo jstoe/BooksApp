@@ -60,6 +60,7 @@ namespace BooksApp.Droid
         {
             base.InitializeFirstChance();
             Mvx.LazyConstructAndRegisterSingleton<IPlatformInfo, DroidPlatformInfo>();
+            Mvx.LazyConstructAndRegisterSingleton<IDialogService, DroidDialogService>();
         }
 
         protected override IMvxApplication CreateApp()
