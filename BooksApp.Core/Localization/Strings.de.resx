@@ -123,6 +123,12 @@
   <data name="DrawerOpen" xml:space="preserve">
     <value>Navigations-Schublade öffnen</value>
   </data>
+  <data name="NewSearch" xml:space="preserve">
+    <value>Neue Suche</value>
+  </data>
+  <data name="ResearchTitle" xml:space="preserve">
+    <value>Recherche</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Willkommen</value>
   </data>

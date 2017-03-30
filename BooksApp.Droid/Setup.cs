@@ -11,6 +11,8 @@ using System.Reflection;
 using MvvmCross.Droid.Views;
 using MvvmCross.Droid.Shared.Presenter;
 using MvvmCross.Platform.Droid.Platform;
+using System.Linq;
+using Honeywell.Portable.Converters;
 
 namespace BooksApp.Droid
 {
@@ -78,10 +80,10 @@ namespace BooksApp.Droid
             return new DebugTrace();
         }
 
-        protected override void FillTargetFactories(IMvxTargetBindingFactoryRegistry registry)
-        {
-            base.FillTargetFactories(registry);
-        }
+        protected override IEnumerable<Assembly> ValueConverterAssemblies =>
+            base.ValueConverterAssemblies
+            .Concat(new List<Assembly> { typeof(NotConverter).Assembly })
+            .ToList();
 
         public class MvxPanelPopToRootPresentationHint : MvxPresentationHint
         {

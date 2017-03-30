@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <include
+      layout="@layout/toolbar_actionbar" />
+  
+  
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginLeft="@dimen/element_margin_medium"
+        android:layout_marginRight="@dimen/element_margin_medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_medium"
+        android:gravity="center"
+        local:MvxBind="Text Loc(., 'Search')"
+        />
+  <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" >
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        local:MvxBind="Text SearchText"
+        android:textSize="@dimen/text_large"
+        />
+    <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        local:MvxBind="Text Loc(.,'Search'); Click StartSearchCommand; Enabled Not(IsSearching)"/>
+
+  </LinearLayout>
+  
+  <ProgressBar
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      local:MvxBind="Visibility Visibility(IsSearching)"
+      android:id="@+id/progressBar1"
+      android:layout_marginTop="@dimen/element_margin_large"
+      android:layout_marginBottom="@dimen/element_margin_large" />
+
+  <Mvx.MvxListView android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        local:MvxItemTemplate="@layout/bookitem"
+        local:MvxBind="ItemsSource Books; ItemClick SelectCommand"/>
+
+</LinearLayout>

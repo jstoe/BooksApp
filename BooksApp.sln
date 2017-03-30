@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksApp.Droid", "BooksApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Honeywell.Portable", "Honeywell.Portable\Honeywell.Portable.csproj", "{EBFA1632-B5A0-4161-80E9-20F5ADDB0F5A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Portable", "Portable", "{4469E9F7-452F-44C8-A4E3-D3864511179C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksApp.Data", "BooksApp.Data\BooksApp.Data.csproj", "{4BC06CCB-56BB-4B8B-9CA0-40DA0AEF2CB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,8 +33,17 @@ Global
 		{EBFA1632-B5A0-4161-80E9-20F5ADDB0F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBFA1632-B5A0-4161-80E9-20F5ADDB0F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBFA1632-B5A0-4161-80E9-20F5ADDB0F5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC06CCB-56BB-4B8B-9CA0-40DA0AEF2CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC06CCB-56BB-4B8B-9CA0-40DA0AEF2CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC06CCB-56BB-4B8B-9CA0-40DA0AEF2CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC06CCB-56BB-4B8B-9CA0-40DA0AEF2CB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C6EA0A61-7B9C-4FA9-BBE8-DFB39DE70F4E} = {4469E9F7-452F-44C8-A4E3-D3864511179C}
+		{EBFA1632-B5A0-4161-80E9-20F5ADDB0F5A} = {4469E9F7-452F-44C8-A4E3-D3864511179C}
+		{4BC06CCB-56BB-4B8B-9CA0-40DA0AEF2CB7} = {4469E9F7-452F-44C8-A4E3-D3864511179C}
 	EndGlobalSection
 EndGlobal

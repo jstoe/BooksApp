@@ -123,6 +123,15 @@
   <data name="DrawerOpen" xml:space="preserve">
     <value>Open navigation drawer</value>
   </data>
+  <data name="NewSearch" xml:space="preserve">
+    <value>New Search</value>
+  </data>
+  <data name="ResearchTitle" xml:space="preserve">
+    <value>Research</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome</value>
   </data>

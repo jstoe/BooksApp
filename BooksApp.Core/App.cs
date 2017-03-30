@@ -4,6 +4,8 @@ using Honeywell.Portable.Services;
 using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
 using BooksApp.Core.ViewModels;
+using BooksApp.Data.Interfaces;
+using BooksApp.Data.Services;
 
 namespace BooksApp.Core
 {
@@ -18,6 +20,9 @@ namespace BooksApp.Core
 
             Mvx.ConstructAndRegisterSingleton<ISettingsService, SimpleFileSettingsService>();
             Mvx.RegisterType<ILoginService, LoginService>();
+
+            Mvx.ConstructAndRegisterSingleton<IRestService, RestService>();
+            Mvx.RegisterType<IBookService, BookService>();
 
             CheckAndSetAppStart();
         }

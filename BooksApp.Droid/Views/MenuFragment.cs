@@ -62,24 +62,15 @@ namespace BooksApp.Droid.Views
             // add a small delay to prevent any UI issues
             await Task.Delay(TimeSpan.FromMilliseconds(250));
 
-            //switch (itemId)
-            //{
-            //    case Resource.Id.nav_home:
-            //        ViewModel.ShowHomeCommand.Execute();
-            //        break;
-            //    case Resource.Id.nav_viewpager:
-            //        ViewModel.ShowViewPagerCommand.Execute();
-            //        break;
-            //    case Resource.Id.nav_recyclerview:
-            //        ViewModel.ShowRecyclerCommand.Execute();
-            //        break;
-            //    case Resource.Id.nav_settings:
-            //        ViewModel.ShowSettingCommand.Execute();
-            //        break;
-            //    case Resource.Id.nav_helpfeedback:
-            //        ViewModel.ShowHelpCommand.Execute();
-            //        break;
-            //}
+            switch (itemId)
+            {
+                case Resource.Id.nav_home:
+                    ViewModel.ShowHomeCommand.Execute(0);
+                    break;
+                case Resource.Id.nav_research:
+                    ViewModel.ShowResearchCommand.Execute(0);
+                    break;
+            }
         }
     }
 
