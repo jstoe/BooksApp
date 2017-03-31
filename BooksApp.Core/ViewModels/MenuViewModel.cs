@@ -8,5 +8,7 @@ namespace BooksApp.Core.ViewModels
         public ICommand ShowHomeCommand => new MvxCommand(() => ShowViewModel<WelcomeViewModel>());
 
         public ICommand ShowResearchCommand => new MvxCommand(() => ShowViewModel<SearchViewModel>());
+
+        public ICommand ShowResearchListCommand => new MvxCommand(() => ShowViewModel<SearchListViewModel>());
     }
 }

@@ -6,6 +6,9 @@ using MvvX.Plugins.CouchBaseLite.Database;
 using System.IO;
 using System;
 using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using System.Linq;
 
 namespace BooksApp.Data.Services
 {
@@ -18,11 +21,16 @@ namespace BooksApp.Data.Services
         {
             // Connect to the database
             couchbase.Initialize(platform.BaseDirectory);
-            couchbase.ManageLog(false);
             var options = couchbase.CreateDatabaseOptions();
             options.Create = true;
             m_DataBase = couchbase.CreateConnection("bookscouchdb", options);
             m_SettingsService = settingsService;
+        }
+
+        public async Task<IEnumerable<BookEntry>> LoadBooksAsync()
+        {
+            var query = await m_DataBase.CreateAllDocumentsQuery().RunAsync();
+            return query.Select(q => q.Document.UserProperties.ToObject<BookEntry>()).OfType<BookEntry>();
         }
 
         public void SaveBook(Book currentBook)

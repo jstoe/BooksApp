@@ -22,11 +22,14 @@ namespace BooksApp.Core.ViewModels
 
         public bool IsLoading { get; set; } = true;
 
+        public bool IsDirty { get; set; } = true;
+
         public ICommand SaveCommand => new MvxCommand(Save);
 
         private void Save()
         {
             m_BookStorage.SaveBook(CurrentBook);
+            IsDirty = false;
         }
 
         public void Init(string book)

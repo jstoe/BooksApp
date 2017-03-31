@@ -168,6 +168,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Behaviors\Swipe2DismissTouchHelperCallback.cs" />
     <Compile Include="Bootstrap\CouchBaseLitePluginBootstrap.cs" />
     <Compile Include="Bootstrap\DownloadCachePluginBootstrap.cs" />
     <Compile Include="Bootstrap\FilePluginBootstrap.cs" />
@@ -187,6 +188,7 @@
     <Compile Include="Views\MainActivity.cs" />
     <Compile Include="Views\MenuFragment.cs" />
     <Compile Include="Views\BookDetailFragment.cs" />
+    <Compile Include="Views\SearchListFragment.cs" />
     <Compile Include="Views\SearchFragment.cs" />
     <Compile Include="Views\WelcomeFragment.cs" />
     <Compile Include="Views\LoginView.cs" />
@@ -217,6 +219,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\fragment_detail.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\fragment_searchlist.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\BookEntryItem.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

@@ -11,5 +11,6 @@ namespace BooksApp.Data.Interfaces
     public interface IBookStorage
     {
         void SaveBook(Book currentBook);
+        Task<IEnumerable<BookEntry>> LoadBooksAsync();
     }
 }
