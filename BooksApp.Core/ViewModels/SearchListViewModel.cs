@@ -2,6 +2,7 @@
 using BooksApp.Data.Interfaces;
 using BooksApp.Data.Services;
 using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform.Platform;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -31,7 +32,7 @@ namespace BooksApp.Core.ViewModels
 
         private async void ShareItem(BookEntry entry)
         {
-           await m_Chat.Send(JsonConvert.SerializeObject(entry));
+            await m_Chat.Send(JsonConvert.SerializeObject(entry));
         }
 
         protected override void InitFromBundle(IMvxBundle parameters)
@@ -39,21 +40,28 @@ namespace BooksApp.Core.ViewModels
             IsLoading = true;
             base.InitFromBundle(parameters);
             InitChat();
-            LoadBooks(); 
+            LoadBooks();
         }
 
         private async void InitChat()
         {
             m_Chat = new PortableChat();
-            if(await m_Chat.Connect("http://www.adaxer.de/signalr/hubs"))
+            if (await m_Chat.Connect("http://www.adaxer.de/signalr/hubs"))
                 m_Chat.Receive += OnReceiveShared; ;
         }
 
         private void OnReceiveShared(string json)
         {
-            var entry = JsonConvert.DeserializeObject<BookEntry>(json);
-            if (!Books.Any(b => b.Id == entry.Id))
-                Books.Add(entry);
+            try
+            {
+                var entry = JsonConvert.DeserializeObject<BookEntry>(json);
+                if (!Books.Any(b => b.Id == entry.Id))
+                    Books.Add(entry);
+            }
+            catch (Exception ex)
+            {
+                MvxTrace.Error(ex.Message);
+            }
         }
 
         private async void LoadBooks()
