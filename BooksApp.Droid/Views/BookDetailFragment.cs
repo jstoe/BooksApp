@@ -8,13 +8,15 @@ using MvvmCross.Droid.Views;
 
 namespace BooksApp.Droid.Views
 {
+    // true im Attribut: Backstack-Eintrag => Back innerhalb der App
     [MvxFragment(typeof(MainViewModel), Resource.Id.content_frame, true)]
     [Register("booksapp.droid.views.BookDetailFragment")]
     public class BookDetailFragment : BaseFragment<BookDetailViewModel>
     {
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
-            //ShowHamburgerMenu = true;
+            // ShowHamburgerMenu = true;
+            // Wenn eingeschaltet, Navigation inkonsistent?
             return base.OnCreateView(inflater, container, savedInstanceState);
         }
 

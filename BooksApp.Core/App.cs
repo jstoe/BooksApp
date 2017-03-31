@@ -23,6 +23,7 @@ namespace BooksApp.Core
 
             Mvx.ConstructAndRegisterSingleton<IRestService, RestService>();
             Mvx.RegisterType<IBookService, BookService>();
+            Mvx.RegisterType<IBookStorage, BookStorage>();
 
             CheckAndSetAppStart();
         }

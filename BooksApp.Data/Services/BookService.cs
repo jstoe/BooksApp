@@ -22,15 +22,10 @@ namespace BooksApp.Data.Services
 
         public async Task<BookQuery> BookQueryAsync(string text)
         {
-            //await Task.Delay(200);
-            //var result = new BookQuery { Count = 100, Books = JsonConvert.DeserializeObject<List<Book>>(s_JsonData) };
-            //return result;
-
             var result = await m_Rest.GetDataAsync<BookQuery>
                 (string.Format("https://www.googleapis.com/books/v1/volumes?q={0}&maxResults=10", text));
 
             return result;
-
         }
 
         public async Task<Book> GetBookDetailsAsync(string id)

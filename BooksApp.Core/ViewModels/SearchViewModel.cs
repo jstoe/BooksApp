@@ -4,6 +4,7 @@ using MvvmCross.Core.ViewModels;
 using System.Collections.Generic;
 using System.Windows.Input;
 using System;
+using Newtonsoft.Json;
 
 namespace BooksApp.Core.ViewModels
 {
@@ -32,14 +33,14 @@ namespace BooksApp.Core.ViewModels
         {
             CurrentBook = book;
             if (CurrentBook != null)
-                ShowViewModel<BookDetailViewModel>(new { id = CurrentBook.Id });
+                ShowViewModel<BookDetailViewModel>(new { book = JsonConvert.SerializeObject(CurrentBook) });
         }
 
         private async void StartSearch()
         {
             IsSearching=true;
             var query = await m_BookService.BookQueryAsync(SearchText);
-            Books = query.Books;
+            Books = query?.Books;
             IsSearching = false;
         }
 

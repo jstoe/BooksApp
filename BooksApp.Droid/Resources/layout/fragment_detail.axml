@@ -1,63 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <include
+
+  <LinearLayout android:orientation="vertical"       android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_alignParentTop="true">
+  
+    <include
       layout="@layout/toolbar_actionbar" />
 
-
-  <TextView
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:id="@+id/textView1"
-      android:layout_marginLeft="@dimen/element_margin_medium"
-      android:layout_marginRight="@dimen/element_margin_medium"
-      android:textColor="@color/black"
-      android:textSize="@dimen/text_medium"
-      android:gravity="center" android:text="Detail"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginLeft="@dimen/element_margin_medium"
+        android:layout_marginRight="@dimen/element_margin_medium"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_medium"
+        android:gravity="center" android:text="Detail"
         />
 
-  <ProgressBar
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_gravity="center"
-      android:gravity="center"
-      local:MvxBind="Visibility Visibility(IsLoading)"
-      android:layout_marginTop="@dimen/element_margin_large"
-      android:layout_marginBottom="@dimen/element_margin_large" />
-
-  <LinearLayout
-    android:orientation="horizontal"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <Mvx.MvxImageView
-         android:layout_width="80dp"
+    <ProgressBar
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-         local:MvxBind="ImageUrl CurrentBook.Info.ImageLinks.Thumbnail"
-      />
+        android:layout_gravity="center"
+        android:gravity="center"
+        local:MvxBind="Visibility Visibility(IsLoading)"
+        android:layout_marginTop="@dimen/element_margin_large"
+        android:layout_marginBottom="@dimen/element_margin_large" />
+
     <LinearLayout
-         android:orientation="vertical"
-         android:layout_width="fill_parent"
-         android:layout_height="wrap_content">
-      <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        local:MvxBind="Text CurrentBook.Info.Title"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <Mvx.MvxImageView
+           android:layout_width="80dp"
+          android:layout_height="wrap_content"
+           local:MvxBind="ImageUrl CurrentBook.Info.ImageLinks.Thumbnail"
+      />
+      <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content">
+        <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="20dp"
+          local:MvxBind="Text CurrentBook.Info.Title"
     />
-      <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="14dp"
-        android:layout_weight="1"
-        android:ellipsize="none"
-        android:maxLines="3"
-        android:scrollHorizontally="false"
-        local:MvxBind="Text CurrentBook.Info.Description"
+        <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:textSize="14dp"
+          android:layout_weight="1"
+          android:ellipsize="none"
+          android:maxLines="3"
+          android:scrollHorizontally="false"
+          local:MvxBind="Text CurrentBook.Info.Description"
     />
-    </LinearLayout>
+      </LinearLayout>
 
+    </LinearLayout>
   </LinearLayout>
-</LinearLayout>
+  <Button android:layout_width="fill_parent" android:layout_alignParentBottom="true"
+      android:layout_height="wrap_content" android:text="Save" local:MvxBind="Click SaveCommand"/>
+  />
+</RelativeLayout>
