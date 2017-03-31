@@ -13,6 +13,8 @@ using MvvmCross.Droid.Shared.Presenter;
 using MvvmCross.Platform.Droid.Platform;
 using System.Linq;
 using Honeywell.Portable.Converters;
+using MvvX.Plugins.CouchBaseLite;
+using MvvX.Plugins.CouchBaseLite.Platform;
 
 namespace BooksApp.Droid
 {
@@ -39,22 +41,6 @@ namespace BooksApp.Droid
         {
             var mvxFragmentsPresenter = new MvxFragmentsPresenter(AndroidViewAssemblies);
             Mvx.RegisterSingleton<IMvxAndroidViewPresenter>(mvxFragmentsPresenter);
-
-            //add a presentation hint handler to listen for pop to root
-            mvxFragmentsPresenter.AddPresentationHintHandler<MvxPanelPopToRootPresentationHint>(hint =>
-            {
-                var activity = Mvx.Resolve<IMvxAndroidCurrentTopActivity>().Activity;
-                var fragmentActivity = activity as Android.Support.V4.App.FragmentActivity;
-
-                for (int i = 0; i < fragmentActivity.SupportFragmentManager.BackStackEntryCount; i++)
-                {
-                    fragmentActivity.SupportFragmentManager.PopBackStack();
-                }
-                return true;
-            });
-            //register the presentation hint to pop to root
-            //picked up in the third view model
-            Mvx.RegisterSingleton<MvxPresentationHint>(() => new MvxPanelPopToRootPresentationHint());
             return mvxFragmentsPresenter;
         }
 
@@ -84,9 +70,5 @@ namespace BooksApp.Droid
             base.ValueConverterAssemblies
             .Concat(new List<Assembly> { typeof(NotConverter).Assembly })
             .ToList();
-
-        public class MvxPanelPopToRootPresentationHint : MvxPresentationHint
-        {
-        }
     }
 }

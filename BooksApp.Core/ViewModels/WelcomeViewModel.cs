@@ -1,6 +1,9 @@
 ﻿using BooksApp.Core.Localization;
+using BooksApp.Data.Interfaces;
+using BooksApp.Data.Services;
 using Honeywell.Portable.Interfaces;
 using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform;
 
 namespace BooksApp.Core.ViewModels
 {
