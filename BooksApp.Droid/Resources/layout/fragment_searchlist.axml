@@ -28,7 +28,7 @@
   <Mvx.MvxListView
       android:layout_width="fill_parent"
       android:id="@+id/theList"
-      android:layout_height="wrap_content"
+      android:layout_height="fill_parent"
       local:MvxItemTemplate="@layout/bookentryitem"
       local:MvxBind="ItemsSource Books; ItemClick ShareCommand" />
 </LinearLayout>
