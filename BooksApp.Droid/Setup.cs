@@ -15,6 +15,7 @@ using System.Linq;
 using Honeywell.Portable.Converters;
 using MvvX.Plugins.CouchBaseLite;
 using MvvX.Plugins.CouchBaseLite.Platform;
+using MvvmCross.Platform.Plugins;
 
 namespace BooksApp.Droid
 {
@@ -54,6 +55,11 @@ namespace BooksApp.Droid
         protected override IMvxApplication CreateApp()
         {
             return new Core.App();
+        }
+
+        protected override IMvxPluginManager InitializePluginFramework()
+        {
+            return base.InitializePluginFramework();
         }
 
         protected override void InitializeLastChance()

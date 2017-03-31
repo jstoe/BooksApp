@@ -64,6 +64,6 @@
     </LinearLayout>
   </LinearLayout>
   <Button android:layout_width="fill_parent" android:layout_alignParentBottom="true"
-      android:layout_height="wrap_content" android:text="Save" local:MvxBind="Click SaveCommand"/>
+      android:layout_height="wrap_content" android:text="Save" local:MvxBind="Click SaveCommand; Visibility Visibility(IsDirty)"/>
   />
 </RelativeLayout>

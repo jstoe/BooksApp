@@ -13,6 +13,9 @@ xmlns:local="http://schemas.android.com/apk/res-auto">
       <item
           android:id="@+id/nav_research"
       android:title="New Search" />
+      <item
+          android:id="@+id/nav_list"
+      android:title="Show Searches" />
     </menu>
   </item>
 

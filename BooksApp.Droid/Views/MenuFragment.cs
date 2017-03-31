@@ -70,6 +70,9 @@ namespace BooksApp.Droid.Views
                 case Resource.Id.nav_research:
                     ViewModel.ShowResearchCommand.Execute(0);
                     break;
+                case Resource.Id.nav_list:
+                    ViewModel.ShowResearchListCommand.Execute(0);
+                    break;
             }
         }
     }
