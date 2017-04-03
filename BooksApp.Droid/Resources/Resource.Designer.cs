@@ -2053,11 +2053,19 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f06000c
 			public const int MvxBindingTagUnique = 2131099660;
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f060079
 			public const int ReLaSearchButton = 2131099769;
 			
 			// aapt resource value: 0x7f060080
 			public const int TbxPassword = 2131099776;
+=======
+			// aapt resource value: 0x7f06007e
+			public const int TbxPassword = 2131099774;
+			
+			// aapt resource value: 0x7f06007d
+			public const int TbxUsername = 2131099773;
+>>>>>>> 44f3ed7e8f475c66b9785046f26adb68837364e0
 			
 			// aapt resource value: 0x7f06007f
 			public const int TbxUsername = 2131099775;
@@ -2245,8 +2253,13 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f060041
 			public const int image = 2131099713;
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f06007e
 			public const int imageView = 2131099774;
+=======
+			// aapt resource value: 0x7f06007c
+			public const int imageView = 2131099772;
+>>>>>>> 44f3ed7e8f475c66b9785046f26adb68837364e0
 			
 			// aapt resource value: 0x7f060075
 			public const int image_view_row_icon = 2131099765;
@@ -2272,8 +2285,13 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f060043
 			public const int list_item = 2131099715;
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f06007c
 			public const int main_content = 2131099772;
+=======
+			// aapt resource value: 0x7f06007a
+			public const int main_content = 2131099770;
+>>>>>>> 44f3ed7e8f475c66b9785046f26adb68837364e0
 			
 			// aapt resource value: 0x7f060083
 			public const int main_frame = 2131099779;
@@ -2290,6 +2308,7 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f060018
 			public const int multiply = 2131099672;
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f060096
 			public const int nav_home = 2131099798;
 			
@@ -2301,6 +2320,16 @@ namespace BooksApp.Droid
 			
 			// aapt resource value: 0x7f060097
 			public const int nav_research = 2131099799;
+=======
+			// aapt resource value: 0x7f060094
+			public const int nav_home = 2131099796;
+			
+			// aapt resource value: 0x7f060093
+			public const int nav_items = 2131099795;
+			
+			// aapt resource value: 0x7f060095
+			public const int nav_research = 2131099797;
+>>>>>>> 44f3ed7e8f475c66b9785046f26adb68837364e0
 			
 			// aapt resource value: 0x7f060085
 			public const int navigation_frame = 2131099781;
@@ -2308,8 +2337,13 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f06006f
 			public const int navigation_header_container = 2131099759;
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f06007d
 			public const int navigation_view = 2131099773;
+=======
+			// aapt resource value: 0x7f06007b
+			public const int navigation_view = 2131099771;
+>>>>>>> 44f3ed7e8f475c66b9785046f26adb68837364e0
 			
 			// aapt resource value: 0x7f060023
 			public const int never = 2131099683;
@@ -2329,8 +2363,13 @@ namespace BooksApp.Droid
 			// aapt resource value: 0x7f06002b
 			public const int pin = 2131099691;
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f06007a
 			public const int progressBar1 = 2131099770;
+=======
+			// aapt resource value: 0x7f060079
+			public const int progressBar1 = 2131099769;
+>>>>>>> 44f3ed7e8f475c66b9785046f26adb68837364e0
 			
 			// aapt resource value: 0x7f060006
 			public const int progress_circular = 2131099654;
@@ -2460,6 +2499,12 @@ namespace BooksApp.Droid
 			
 			// aapt resource value: 0x7f060077
 			public const int text_view_fullname = 2131099767;
+<<<<<<< HEAD
+=======
+			
+			// aapt resource value: 0x7f060078
+			public const int text_view_username = 2131099768;
+>>>>>>> 44f3ed7e8f475c66b9785046f26adb68837364e0
 			
 			// aapt resource value: 0x7f060078
 			public const int text_view_username = 2131099768;
